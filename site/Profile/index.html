@@ -1,10 +1,100 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>B.E.N. Dashboard</title>
+    <link rel="stylesheet" href="../Dashboard/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Dashboard/css/styles.css">
 </head>
 <body>
-<h1>Hello! yay</h1>
+    <nav class="navbar navbar-fixed-top">
+
+        <a class="navbar-brand float-xs-right float-sm-left" href="#"><img src="../Dashboard/images/Logo-2.png" class="img-fluid" /></a>
+
+        <div class="collapse navbar-toggleable-xs">
+
+            <ul class="nav navbar-nav float-sm-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Dashboard/index.html">Welcome [INSERT NAME]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Profile/index.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Courses/index.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Grades/index.html">Grades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Calendar/index.html">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Chat/index.html">Chat</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile">
+        <div class="container">
+            <div class="profile">
+                <div class="Notifcations">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="col-md-4">
+                                    <fieldset class="form-group">
+                                        <img src="../Dashboard/images/Avatar.png" class="img-fluid" />
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label for="name">Name</label>
+                                        <button type="submit" class="btn btn-outline-info btn-block">Logout</button>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                        <h3>Notifications</h3>
+                                        <fieldset class="form-group">
+                                            <label for="upcomingassignements">Upcoming Assignments</label>
+                                            <br />
+                                            <label for="announcements">Announcements</label>
+                                            <br />
+                                            <label for="grades">Grades</label>
+                                            <br />
+                                            <label for="comments">Comments</label>
+                                            <br />
+                                            <label for="message">Message</label>
+                                        </fieldset>
+                                    </div>
+
+                                <div class="col-md-4">
+                                    <fieldset class="form-group">
+                                        <h3>Bio</h3>
+                                        <textarea class="form-control form-control-sm" id="message" placeholder="message..." rows="3"></textarea>
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <h3>Settings</h3>
+                                        <input type="text" class="form-control form-control-sm" id="email" placeholder="email...">
+                                        <input type="tel" class="form-control form-control-sm" id="phone" name="phone" placeholder="123-456-7890"
+                                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                               required>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

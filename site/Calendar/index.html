@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>B.E.N. Dashboard</title>
+    <link rel="stylesheet" href="../Dashboard/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Dashboard/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top">
+
+        <a class="navbar-brand float-xs-right float-sm-left" href="#"><img src="../Dashboard/images/Logo-2.png" class="img-fluid" /></a>
+
+        <div class="collapse navbar-toggleable-xs">
+
+            <ul class="nav navbar-nav float-sm-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Dashboard/index.html">Welcome [INSERT NAME]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Profile/index.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Courses/index.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Grades/index.html">Grades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Calendar/index.html">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Chat/index.html">Chat</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Calendar -->
+    <section id="calendar">
+        <div class="container">
+            <div class="calendar">
+                <div class="month">
+                    <h1 id="demo"></h1>
+                    <script>
+                        const month = new Array();
+                        month[0] = "January";
+                        month[1] = "February";
+                        month[2] = "March";
+                        month[3] = "April";
+                        month[4] = "May";
+                        month[5] = "June";
+                        month[6] = "July";
+                        month[7] = "August";
+                        month[8] = "September";
+                        month[9] = "October";
+                        month[10] = "November";
+                        month[11] = "December";
+
+                        const d = new Date();
+                        let name = month[d.getMonth()];
+                        document.getElementById("demo").innerHTML = name;
+                    </script>
+
+
+                    <div class="date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>1</div>
+                    <div>2</div>
+                </div>
+                <div class="days">
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+                <div class="days">
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                </div>
+                <div class="days">
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                </div>
+                <div class="days">
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                </div>
+                <div class="days">
+                    <div>31</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,15 +1,22 @@
-body{
-	font-size: 16px;
-	color: #000000 ;
-	background-color:#D3D3D3;
-	font-family: 'Arial';
+body, html {
+    font-size: 16px;
+    color: #000000;
+    background-color: #D3D3D3;
+    font-family: 'Arial';
+    height: 100%;
+    padding-top: 100px;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #ffa07a;
-  border-radius: 0;
-  border: 0;
+    background-color: #ffa07a;
+    border-radius: 0;
+    border: 0;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 #logo-img {
@@ -19,7 +26,20 @@ body{
   margin: 10px 15px 10px 0;
 }
 
+.navbar {
+    background-color: #ffa07a;
+    border-bottom: 1px solid #dedede;
+}
 
+.navbar .nav .nav-item .nav-link {
+    color: black;
+    font: bold;
+    font-size: 24px;
+}
+
+.navbar .nav .nav-item .nav-link:hover {
+    color: #fff;
+}
 
 .introduction h1{
 	font-size: 1.5em;
@@ -47,9 +67,19 @@ body{
   white-space: nowrap;
 }
 
-.profile a:hover, .profile a:focus {
-  text-decoration: none;
+.profile h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    white-space: nowrap;
+    text-decoration: underline;
+    padding-bottom: 10px;
 }
+
 .courses h1{
 	font-size: 1.5em;
   text-transform: uppercase;
@@ -105,4 +135,81 @@ body{
 
 .chat a:hover, .chat a:focus {
   text-decoration: none;
+}
+
+.calendar {
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: end;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+    .month h1 {
+        font-size: 2rem;
+        font-weight: 100;
+        text-align: end;
+        text-transform: capitalize;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+        color: white;
+        align-items: center;
+    }
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+}
+
+    .weekdays div {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        width: calc(44.2rem / 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    }
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+    color: aliceblue;
+}
+
+    .days div {
+        font-size: 1.4rem;
+        margin: 0.3rem;
+        width: calc(40.2rem / 7);
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+        transition: background-color 0.2s;
+    }
+
+.border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color:white;
 }
